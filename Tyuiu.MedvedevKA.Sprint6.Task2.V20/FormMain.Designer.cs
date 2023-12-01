@@ -29,30 +29,30 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxTask_MKA = new System.Windows.Forms.GroupBox();
-            this.labelYS1_MKA = new System.Windows.Forms.Label();
             this.labelYS2_MKA = new System.Windows.Forms.Label();
+            this.labelYS1_MKA = new System.Windows.Forms.Label();
             this.groupBoxInputData_MKA = new System.Windows.Forms.GroupBox();
-            this.labelStart_MKA = new System.Windows.Forms.Label();
-            this.textBoxStartStep_MKA = new System.Windows.Forms.TextBox();
-            this.labelEnd_MKA = new System.Windows.Forms.Label();
             this.textBoxStopStep_MKA = new System.Windows.Forms.TextBox();
+            this.labelEnd_MKA = new System.Windows.Forms.Label();
+            this.textBoxStartStep_MKA = new System.Windows.Forms.TextBox();
+            this.labelStart_MKA = new System.Windows.Forms.Label();
             this.buttonHelp_MKA = new System.Windows.Forms.Button();
             this.buttonDone_MKA = new System.Windows.Forms.Button();
             this.groupBoxOutputData_MKA = new System.Windows.Forms.GroupBox();
-            this.labelRES_MKA = new System.Windows.Forms.Label();
+            this.chartFunction_MKA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewFunction_MKA = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.F = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartFunction_MKA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.labelRES_MKA = new System.Windows.Forms.Label();
             this.groupBoxTask_MKA.SuspendLayout();
             this.groupBoxInputData_MKA.SuspendLayout();
             this.groupBoxOutputData_MKA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_MKA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_MKA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_MKA)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_MKA
@@ -66,15 +66,6 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.groupBoxTask_MKA.TabStop = false;
             this.groupBoxTask_MKA.Text = "Условие";
             // 
-            // labelYS1_MKA
-            // 
-            this.labelYS1_MKA.AutoSize = true;
-            this.labelYS1_MKA.Location = new System.Drawing.Point(7, 20);
-            this.labelYS1_MKA.Name = "labelYS1_MKA";
-            this.labelYS1_MKA.Size = new System.Drawing.Size(405, 13);
-            this.labelYS1_MKA.TabIndex = 0;
-            this.labelYS1_MKA.Text = "Протобулировать функцию (sin(x)/x+1,2 ) -sin(x) * 2 - 2x на заданном диапазоне.";
-            // 
             // labelYS2_MKA
             // 
             this.labelYS2_MKA.AutoSize = true;
@@ -83,6 +74,15 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.labelYS2_MKA.Size = new System.Drawing.Size(335, 13);
             this.labelYS2_MKA.TabIndex = 1;
             this.labelYS2_MKA.Text = "Результат вывести в DataGridView и построить график функции.";
+            // 
+            // labelYS1_MKA
+            // 
+            this.labelYS1_MKA.AutoSize = true;
+            this.labelYS1_MKA.Location = new System.Drawing.Point(7, 20);
+            this.labelYS1_MKA.Name = "labelYS1_MKA";
+            this.labelYS1_MKA.Size = new System.Drawing.Size(405, 13);
+            this.labelYS1_MKA.TabIndex = 0;
+            this.labelYS1_MKA.Text = "Протобулировать функцию (sin(x)/x+1,2 ) -sin(x) * 2 - 2x на заданном диапазоне.";
             // 
             // groupBoxInputData_MKA
             // 
@@ -97,22 +97,13 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.groupBoxInputData_MKA.TabStop = false;
             this.groupBoxInputData_MKA.Text = "Ввод данных";
             // 
-            // labelStart_MKA
+            // textBoxStopStep_MKA
             // 
-            this.labelStart_MKA.AutoSize = true;
-            this.labelStart_MKA.Location = new System.Drawing.Point(7, 21);
-            this.labelStart_MKA.Name = "labelStart_MKA";
-            this.labelStart_MKA.Size = new System.Drawing.Size(67, 13);
-            this.labelStart_MKA.TabIndex = 0;
-            this.labelStart_MKA.Text = "Старт шага:";
-            // 
-            // textBoxStartStep_MKA
-            // 
-            this.textBoxStartStep_MKA.Location = new System.Drawing.Point(6, 37);
-            this.textBoxStartStep_MKA.Name = "textBoxStartStep_MKA";
-            this.textBoxStartStep_MKA.Size = new System.Drawing.Size(124, 20);
-            this.textBoxStartStep_MKA.TabIndex = 1;
-            this.textBoxStartStep_MKA.Text = "-5";
+            this.textBoxStopStep_MKA.Location = new System.Drawing.Point(136, 37);
+            this.textBoxStopStep_MKA.Name = "textBoxStopStep_MKA";
+            this.textBoxStopStep_MKA.Size = new System.Drawing.Size(124, 20);
+            this.textBoxStopStep_MKA.TabIndex = 3;
+            this.textBoxStopStep_MKA.Text = "5";
             // 
             // labelEnd_MKA
             // 
@@ -123,13 +114,22 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.labelEnd_MKA.TabIndex = 2;
             this.labelEnd_MKA.Text = "Конец шага:";
             // 
-            // textBoxStopStep_MKA
+            // textBoxStartStep_MKA
             // 
-            this.textBoxStopStep_MKA.Location = new System.Drawing.Point(136, 37);
-            this.textBoxStopStep_MKA.Name = "textBoxStopStep_MKA";
-            this.textBoxStopStep_MKA.Size = new System.Drawing.Size(124, 20);
-            this.textBoxStopStep_MKA.TabIndex = 3;
-            this.textBoxStopStep_MKA.Text = "5";
+            this.textBoxStartStep_MKA.Location = new System.Drawing.Point(6, 37);
+            this.textBoxStartStep_MKA.Name = "textBoxStartStep_MKA";
+            this.textBoxStartStep_MKA.Size = new System.Drawing.Size(124, 20);
+            this.textBoxStartStep_MKA.TabIndex = 1;
+            this.textBoxStartStep_MKA.Text = "-5";
+            // 
+            // labelStart_MKA
+            // 
+            this.labelStart_MKA.AutoSize = true;
+            this.labelStart_MKA.Location = new System.Drawing.Point(7, 21);
+            this.labelStart_MKA.Name = "labelStart_MKA";
+            this.labelStart_MKA.Size = new System.Drawing.Size(67, 13);
+            this.labelStart_MKA.TabIndex = 0;
+            this.labelStart_MKA.Text = "Старт шага:";
             // 
             // buttonHelp_MKA
             // 
@@ -168,14 +168,23 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.groupBoxOutputData_MKA.TabStop = false;
             this.groupBoxOutputData_MKA.Text = "Вывод данных";
             // 
-            // labelRES_MKA
+            // chartFunction_MKA
             // 
-            this.labelRES_MKA.AutoSize = true;
-            this.labelRES_MKA.Location = new System.Drawing.Point(7, 19);
-            this.labelRES_MKA.Name = "labelRES_MKA";
-            this.labelRES_MKA.Size = new System.Drawing.Size(62, 13);
-            this.labelRES_MKA.TabIndex = 0;
-            this.labelRES_MKA.Text = "Результат:";
+            chartArea2.Name = "ChartArea1";
+            this.chartFunction_MKA.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartFunction_MKA.Legends.Add(legend2);
+            this.chartFunction_MKA.Location = new System.Drawing.Point(240, 35);
+            this.chartFunction_MKA.Name = "chartFunction_MKA";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunction_MKA.Series.Add(series2);
+            this.chartFunction_MKA.Size = new System.Drawing.Size(458, 371);
+            this.chartFunction_MKA.TabIndex = 2;
+            this.chartFunction_MKA.Text = "chart1";
             // 
             // dataGridViewFunction_MKA
             // 
@@ -185,6 +194,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.F});
             this.dataGridViewFunction_MKA.Location = new System.Drawing.Point(6, 35);
             this.dataGridViewFunction_MKA.Name = "dataGridViewFunction_MKA";
+            this.dataGridViewFunction_MKA.ReadOnly = true;
             this.dataGridViewFunction_MKA.RowHeadersVisible = false;
             this.dataGridViewFunction_MKA.Size = new System.Drawing.Size(193, 384);
             this.dataGridViewFunction_MKA.TabIndex = 1;
@@ -193,29 +203,22 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             // 
             this.X.HeaderText = "X";
             this.X.Name = "X";
+            this.X.ReadOnly = true;
             // 
             // F
             // 
             this.F.HeaderText = "F(X)";
             this.F.Name = "F";
+            this.F.ReadOnly = true;
             // 
-            // chartFunction_MKA
+            // labelRES_MKA
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chartFunction_MKA.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chartFunction_MKA.Legends.Add(legend7);
-            this.chartFunction_MKA.Location = new System.Drawing.Point(240, 35);
-            this.chartFunction_MKA.Name = "chartFunction_MKA";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.IsVisibleInLegend = false;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chartFunction_MKA.Series.Add(series7);
-            this.chartFunction_MKA.Size = new System.Drawing.Size(458, 371);
-            this.chartFunction_MKA.TabIndex = 2;
-            this.chartFunction_MKA.Text = "chart1";
+            this.labelRES_MKA.AutoSize = true;
+            this.labelRES_MKA.Location = new System.Drawing.Point(7, 19);
+            this.labelRES_MKA.Name = "labelRES_MKA";
+            this.labelRES_MKA.Size = new System.Drawing.Size(62, 13);
+            this.labelRES_MKA.TabIndex = 0;
+            this.labelRES_MKA.Text = "Результат:";
             // 
             // FormMain
             // 
@@ -227,6 +230,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.Controls.Add(this.buttonHelp_MKA);
             this.Controls.Add(this.groupBoxInputData_MKA);
             this.Controls.Add(this.groupBoxTask_MKA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -237,8 +241,8 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task2.V20
             this.groupBoxInputData_MKA.PerformLayout();
             this.groupBoxOutputData_MKA.ResumeLayout(false);
             this.groupBoxOutputData_MKA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_MKA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_MKA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_MKA)).EndInit();
             this.ResumeLayout(false);
 
         }

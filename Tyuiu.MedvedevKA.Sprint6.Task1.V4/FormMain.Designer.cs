@@ -33,13 +33,13 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task1.V4
             this.labelText2_MKA = new System.Windows.Forms.Label();
             this.labelText1_MKA = new System.Windows.Forms.Label();
             this.groupBoxInputData_MKA = new System.Windows.Forms.GroupBox();
-            this.labelStart_MKA = new System.Windows.Forms.Label();
-            this.textBoxStartStep_MKA = new System.Windows.Forms.TextBox();
-            this.labelStop_MKA = new System.Windows.Forms.Label();
             this.textBoxStopStep_MKA = new System.Windows.Forms.TextBox();
+            this.labelStop_MKA = new System.Windows.Forms.Label();
+            this.textBoxStartStep_MKA = new System.Windows.Forms.TextBox();
+            this.labelStart_MKA = new System.Windows.Forms.Label();
             this.groupBoxOutputData_MKA = new System.Windows.Forms.GroupBox();
-            this.labelRES_MKA = new System.Windows.Forms.Label();
             this.textBoxRes_MKA = new System.Windows.Forms.TextBox();
+            this.labelRES_MKA = new System.Windows.Forms.Label();
             this.buttonHelp_MKA = new System.Windows.Forms.Button();
             this.buttonDone_MKA = new System.Windows.Forms.Button();
             this.groupBoxTask_MKA.SuspendLayout();
@@ -89,22 +89,13 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task1.V4
             this.groupBoxInputData_MKA.TabStop = false;
             this.groupBoxInputData_MKA.Text = "Ввод данных";
             // 
-            // labelStart_MKA
+            // textBoxStopStep_MKA
             // 
-            this.labelStart_MKA.AutoSize = true;
-            this.labelStart_MKA.Location = new System.Drawing.Point(6, 21);
-            this.labelStart_MKA.Name = "labelStart_MKA";
-            this.labelStart_MKA.Size = new System.Drawing.Size(67, 13);
-            this.labelStart_MKA.TabIndex = 0;
-            this.labelStart_MKA.Text = "Старт шага:";
-            // 
-            // textBoxStartStep_MKA
-            // 
-            this.textBoxStartStep_MKA.Location = new System.Drawing.Point(9, 38);
-            this.textBoxStartStep_MKA.Name = "textBoxStartStep_MKA";
-            this.textBoxStartStep_MKA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStartStep_MKA.TabIndex = 1;
-            this.textBoxStartStep_MKA.Text = "-5";
+            this.textBoxStopStep_MKA.Location = new System.Drawing.Point(144, 38);
+            this.textBoxStopStep_MKA.Name = "textBoxStopStep_MKA";
+            this.textBoxStopStep_MKA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStopStep_MKA.TabIndex = 3;
+            this.textBoxStopStep_MKA.Text = "5";
             // 
             // labelStop_MKA
             // 
@@ -115,13 +106,22 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task1.V4
             this.labelStop_MKA.TabIndex = 2;
             this.labelStop_MKA.Text = "Конец шага:";
             // 
-            // textBoxStopStep_MKA
+            // textBoxStartStep_MKA
             // 
-            this.textBoxStopStep_MKA.Location = new System.Drawing.Point(144, 38);
-            this.textBoxStopStep_MKA.Name = "textBoxStopStep_MKA";
-            this.textBoxStopStep_MKA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStopStep_MKA.TabIndex = 3;
-            this.textBoxStopStep_MKA.Text = "5";
+            this.textBoxStartStep_MKA.Location = new System.Drawing.Point(9, 38);
+            this.textBoxStartStep_MKA.Name = "textBoxStartStep_MKA";
+            this.textBoxStartStep_MKA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStartStep_MKA.TabIndex = 1;
+            this.textBoxStartStep_MKA.Text = "-5";
+            // 
+            // labelStart_MKA
+            // 
+            this.labelStart_MKA.AutoSize = true;
+            this.labelStart_MKA.Location = new System.Drawing.Point(6, 21);
+            this.labelStart_MKA.Name = "labelStart_MKA";
+            this.labelStart_MKA.Size = new System.Drawing.Size(67, 13);
+            this.labelStart_MKA.TabIndex = 0;
+            this.labelStart_MKA.Text = "Старт шага:";
             // 
             // groupBoxOutputData_MKA
             // 
@@ -134,15 +134,6 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task1.V4
             this.groupBoxOutputData_MKA.TabStop = false;
             this.groupBoxOutputData_MKA.Text = "Вывод данных";
             // 
-            // labelRES_MKA
-            // 
-            this.labelRES_MKA.AutoSize = true;
-            this.labelRES_MKA.Location = new System.Drawing.Point(7, 16);
-            this.labelRES_MKA.Name = "labelRES_MKA";
-            this.labelRES_MKA.Size = new System.Drawing.Size(62, 13);
-            this.labelRES_MKA.TabIndex = 0;
-            this.labelRES_MKA.Text = "Результат:";
-            // 
             // textBoxRes_MKA
             // 
             this.textBoxRes_MKA.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -153,6 +144,15 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task1.V4
             this.textBoxRes_MKA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxRes_MKA.Size = new System.Drawing.Size(220, 390);
             this.textBoxRes_MKA.TabIndex = 1;
+            // 
+            // labelRES_MKA
+            // 
+            this.labelRES_MKA.AutoSize = true;
+            this.labelRES_MKA.Location = new System.Drawing.Point(7, 16);
+            this.labelRES_MKA.Name = "labelRES_MKA";
+            this.labelRES_MKA.Size = new System.Drawing.Size(62, 13);
+            this.labelRES_MKA.TabIndex = 0;
+            this.labelRES_MKA.Text = "Результат:";
             // 
             // buttonHelp_MKA
             // 
@@ -186,6 +186,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task1.V4
             this.Controls.Add(this.groupBoxOutputData_MKA);
             this.Controls.Add(this.groupBoxInputData_MKA);
             this.Controls.Add(this.groupBoxTask_MKA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

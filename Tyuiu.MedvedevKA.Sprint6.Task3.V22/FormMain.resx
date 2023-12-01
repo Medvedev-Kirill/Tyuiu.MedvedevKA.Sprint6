@@ -117,10 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="X.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="F.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="textBoxTask_MKA.Text" xml:space="preserve">
+    <value>Дан массив 5 на 5 элементов. Заменить четные значения в первой строке на 0.
+
+Результат вывести в DataGridView.
+
+Графический интерфейс оформить по шаблону из лекции.
+
+17   0  19  -8  -1
+
+   9   4  -5   7  15
+
+  11  13   4  -4 -14
+
+  11  14   5 -15  16
+
+   2 -14  -2  11  11</value>
+  </data>
 </root>

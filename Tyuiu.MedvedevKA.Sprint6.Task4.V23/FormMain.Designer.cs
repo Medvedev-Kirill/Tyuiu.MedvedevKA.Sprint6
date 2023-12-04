@@ -215,7 +215,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task4.V23
             this.Controls.Add(this.groupBoxTask_MKA);
             this.MinimumSize = new System.Drawing.Size(800, 450);
             this.Name = "FormMain";
-            this.Text = "Спринт 6 | Таск 3 | Вариант 23 | Медведев К.А.";
+            this.Text = "Спринт 6 | Таск 4 | Вариант 23 | Медведев К.А.";
             this.groupBoxTask_MKA.ResumeLayout(false);
             this.groupBoxTask_MKA.PerformLayout();
             this.groupBoxIntputData_MKA.ResumeLayout(false);

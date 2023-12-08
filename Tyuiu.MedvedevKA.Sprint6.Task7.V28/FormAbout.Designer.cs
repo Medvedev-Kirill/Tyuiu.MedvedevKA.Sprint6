@@ -1,5 +1,5 @@
 ﻿
-namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
+namespace Tyuiu.MedvedevKA.Sprint6.Task7.V28
 {
     partial class FormAbout
     {
@@ -30,37 +30,37 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            this.pictureBoxAvatar_MKA = new System.Windows.Forms.PictureBox();
-            this.labelInfo_MKA = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonOK_MKA = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar_MKA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBoxAvatar_MKA
+            // pictureBox1
             // 
-            this.pictureBoxAvatar_MKA.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar_MKA.Image")));
-            this.pictureBoxAvatar_MKA.Location = new System.Drawing.Point(12, 34);
-            this.pictureBoxAvatar_MKA.Name = "pictureBoxAvatar_MKA";
-            this.pictureBoxAvatar_MKA.Size = new System.Drawing.Size(129, 130);
-            this.pictureBoxAvatar_MKA.TabIndex = 0;
-            this.pictureBoxAvatar_MKA.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 131);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // labelInfo_MKA
+            // label1
             // 
-            this.labelInfo_MKA.AutoSize = true;
-            this.labelInfo_MKA.Location = new System.Drawing.Point(147, 12);
-            this.labelInfo_MKA.Name = "labelInfo_MKA";
-            this.labelInfo_MKA.Size = new System.Drawing.Size(290, 117);
-            this.labelInfo_MKA.TabIndex = 1;
-            this.labelInfo_MKA.Text = resources.GetString("labelInfo_MKA.Text");
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(147, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(290, 130);
+            this.label1.TabIndex = 1;
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // buttonOK_MKA
             // 
-            this.buttonOK_MKA.Location = new System.Drawing.Point(362, 141);
+            this.buttonOK_MKA.Location = new System.Drawing.Point(362, 136);
             this.buttonOK_MKA.Name = "buttonOK_MKA";
             this.buttonOK_MKA.Size = new System.Drawing.Size(75, 23);
             this.buttonOK_MKA.TabIndex = 2;
-            this.buttonOK_MKA.Text = "OK";
+            this.buttonOK_MKA.Text = "ОК";
             this.buttonOK_MKA.UseVisualStyleBackColor = true;
             this.buttonOK_MKA.Click += new System.EventHandler(this.buttonOK_MKA_Click);
             // 
@@ -68,17 +68,17 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 180);
+            this.ClientSize = new System.Drawing.Size(474, 181);
             this.Controls.Add(this.buttonOK_MKA);
-            this.Controls.Add(this.labelInfo_MKA);
-            this.Controls.Add(this.pictureBoxAvatar_MKA);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar_MKA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,8 +86,8 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBoxAvatar_MKA;
-        private System.Windows.Forms.Label labelInfo_MKA;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonOK_MKA;
     }
 }

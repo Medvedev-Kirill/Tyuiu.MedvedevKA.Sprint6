@@ -37,11 +37,11 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             this.groupBoxTask_MKA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_MKA = new System.Windows.Forms.TextBox();
             this.groupBoxInputData_MKA = new System.Windows.Forms.GroupBox();
-            this.groupBoxOutputData_MKA = new System.Windows.Forms.GroupBox();
             this.textBoxInPutData_MKA = new System.Windows.Forms.TextBox();
+            this.groupBoxOutputData_MKA = new System.Windows.Forms.GroupBox();
             this.textBoxOutPutData_MKA = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_MKA = new System.Windows.Forms.OpenFileDialog();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip_MKA = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxTask_MKA.SuspendLayout();
             this.groupBoxInputData_MKA.SuspendLayout();
             this.groupBoxOutputData_MKA.SuspendLayout();
@@ -54,7 +54,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             this.buttonOpenFile_MKA.Name = "buttonOpenFile_MKA";
             this.buttonOpenFile_MKA.Size = new System.Drawing.Size(75, 55);
             this.buttonOpenFile_MKA.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.buttonOpenFile_MKA, "Открыть файл\r\nВыберите нужный файл для обработки\r\n\r\n");
+            this.toolTip_MKA.SetToolTip(this.buttonOpenFile_MKA, "Открыть файл\r\nВыберите нужный файл для обработки\r\n\r\n");
             this.buttonOpenFile_MKA.UseVisualStyleBackColor = true;
             this.buttonOpenFile_MKA.Click += new System.EventHandler(this.buttonOpenFile_MKA_Click);
             // 
@@ -66,7 +66,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             this.buttonDone_MKA.Name = "buttonDone_MKA";
             this.buttonDone_MKA.Size = new System.Drawing.Size(75, 55);
             this.buttonDone_MKA.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.buttonDone_MKA, "Производит поиск в файле вхождений символов \"w\"\r\nи конкатенирует строки в которых" +
+            this.toolTip_MKA.SetToolTip(this.buttonDone_MKA, "Производит поиск в файле вхождений символов \"w\"\r\nи конкатенирует строки в которых" +
         " находят \r\nэти символы\r\n\r\n");
             this.buttonDone_MKA.UseVisualStyleBackColor = true;
             this.buttonDone_MKA.Click += new System.EventHandler(this.buttonDone_MKA_Click);
@@ -78,7 +78,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             this.buttonHelp_MKA.Name = "buttonHelp_MKA";
             this.buttonHelp_MKA.Size = new System.Drawing.Size(75, 55);
             this.buttonHelp_MKA.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.buttonHelp_MKA, "Сведение о программе");
+            this.toolTip_MKA.SetToolTip(this.buttonHelp_MKA, "Сведение о программе");
             this.buttonHelp_MKA.UseVisualStyleBackColor = true;
             this.buttonHelp_MKA.Click += new System.EventHandler(this.buttonHelp_MKA_Click);
             // 
@@ -113,17 +113,6 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             this.groupBoxInputData_MKA.TabStop = false;
             this.groupBoxInputData_MKA.Text = "Ввод:";
             // 
-            // groupBoxOutputData_MKA
-            // 
-            this.groupBoxOutputData_MKA.Controls.Add(this.textBoxOutPutData_MKA);
-            this.groupBoxOutputData_MKA.Location = new System.Drawing.Point(407, 151);
-            this.groupBoxOutputData_MKA.Margin = new System.Windows.Forms.Padding(5);
-            this.groupBoxOutputData_MKA.Name = "groupBoxOutputData_MKA";
-            this.groupBoxOutputData_MKA.Size = new System.Drawing.Size(400, 300);
-            this.groupBoxOutputData_MKA.TabIndex = 5;
-            this.groupBoxOutputData_MKA.TabStop = false;
-            this.groupBoxOutputData_MKA.Text = "Вывод:";
-            // 
             // textBoxInPutData_MKA
             // 
             this.textBoxInPutData_MKA.Location = new System.Drawing.Point(7, 20);
@@ -134,6 +123,17 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             this.textBoxInPutData_MKA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxInPutData_MKA.Size = new System.Drawing.Size(385, 274);
             this.textBoxInPutData_MKA.TabIndex = 0;
+            // 
+            // groupBoxOutputData_MKA
+            // 
+            this.groupBoxOutputData_MKA.Controls.Add(this.textBoxOutPutData_MKA);
+            this.groupBoxOutputData_MKA.Location = new System.Drawing.Point(407, 151);
+            this.groupBoxOutputData_MKA.Margin = new System.Windows.Forms.Padding(5);
+            this.groupBoxOutputData_MKA.Name = "groupBoxOutputData_MKA";
+            this.groupBoxOutputData_MKA.Size = new System.Drawing.Size(400, 300);
+            this.groupBoxOutputData_MKA.TabIndex = 5;
+            this.groupBoxOutputData_MKA.TabStop = false;
+            this.groupBoxOutputData_MKA.Text = "Вывод:";
             // 
             // textBoxOutPutData_MKA
             // 
@@ -150,10 +150,10 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
             // 
             this.openFileDialogTask_MKA.FileName = "openFileDialog1";
             // 
-            // toolTip1
+            // toolTip_MKA
             // 
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Подсказка";
+            this.toolTip_MKA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip_MKA.ToolTipTitle = "Подсказка";
             // 
             // FormMain
             // 
@@ -181,7 +181,7 @@ namespace Tyuiu.MedvedevKA.Sprint6.Task6.V10
         #endregion
 
         private System.Windows.Forms.Button buttonOpenFile_MKA;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip_MKA;
         private System.Windows.Forms.Button buttonDone_MKA;
         private System.Windows.Forms.Button buttonHelp_MKA;
         private System.Windows.Forms.GroupBox groupBoxTask_MKA;
